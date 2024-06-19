@@ -1,0 +1,191 @@
+/*  */
+body {
+  font-family: Arial, sans-serif;
+  /* display: flex; */
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
+  margin: 0;
+}
+
+.App {
+  margin-top: 10%;
+}
+
+.heading {
+  font-family: "Dancing Script", cursive;
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+  color: white;
+}
+
+#todo-app {
+  width: 440px;
+  height: 500px;
+  padding: 20px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+#task-input {
+  width: 70%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #d0a2f7;
+  border-radius: 0;
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow-y: auto;
+  margin-top: 25px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-left: 33%;
+  margin-right: 31%;
+}
+
+.completed .task-text {
+  text-decoration: line-through;
+}
+
+.task-text {
+  font-size: 18px;
+  width: 340px;
+  word-wrap: break-word;
+  white-space: normal;
+  color: white;
+  margin-left: 8px;
+}
+
+.icon-container {
+  display: flex;
+  width: 62px;
+  gap: 8px;
+  padding-left: 10px;
+  justify-content: right;
+  align-items: center;
+}
+
+.delete-icon {
+  color: #9a97a2;
+}
+
+.delete-icon:hover {
+  color: white;
+}
+
+.edit-icon {
+  color: #9a97a2;
+}
+
+.edit-icon:hover {
+  color: white;
+}
+
+/* .checkbox {
+  margin-right: 8px;
+} */
+
+button {
+  padding: 10px 10px;
+  background-color: #928b99;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #9a97a2;
+}
+
+input:focus {
+  outline: darkgray;
+}
+
+.field {
+  padding-right: 25%;
+  margin-left: 31%;
+  background-color: black;
+  color: white;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+ul li:hover {
+  background-color: #9a97a25e;
+}
+
+
+/* App.css */
+
+/* App.css */
+
+.checkbox {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.check-icon {
+  color: white;
+}
+
+/* .checkbox:hover {
+  background-color: #f0f0f0;
+} */
+
+/* Your other existing styles */
+
+.icon-container {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s linear;
+}
+
+li:hover .icon-container {
+  visibility: visible;
+  opacity: 1;
+}
+
+.task-info {
+  display: flex;
+  align-items: center;
+}
+
+.icon-container {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s linear;
+}
+
+li:hover .icon-container {
+  visibility: visible;
+  opacity: 1;
+}
+
+.date {
+  margin-left: auto;
+  /* Aligns date to the right */
+}

@@ -1,0 +1,87 @@
+/* App.css */
+body{
+  background-color: black;
+}
+
+.todo {
+ color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.todo.completed {
+  text-decoration: line-through;
+}
+
+.todo input[type="checkbox"] {
+  margin-right: 10px;
+ 
+}
+
+.todo button {
+  margin-left: auto;
+}
+
+.todo-list{
+  width: 50%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center the content */
+  align-items: center; /* Horizontally center the content */
+  height: 100vh; /* Set the height of the container to 100% of viewport height */
+}
+
+/* *{
+  font-family: "Open Sans", sans-serif;
+} */
+
+input[type="checkbox"]{
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 1px solid lightgray;
+  border-radius: 99999px;
+ 
+  position: relative;
+  outline: none;
+  cursor:pointer;
+  top: .3em;
+}
+
+input[type="checkbox"]:checked{
+  border: solid 2px lightgray;
+}
+
+input[type="checkbox"]:checked:before{
+  content:"\2713";
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0px;
+  top: -5px;
+  left: -1px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.todo-list :hover{
+background-color: #c1c1c152;
+}
+  .Add{
+    padding-right: 414px;
+    margin-bottom: 50px;
+    background-color: black;
+    padding-top: 10px;
+    color: white;
+}
+  
+/* App.css */
+
+
+.todo span{
+  margin-right: 60%;
+}
